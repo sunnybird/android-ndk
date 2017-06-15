@@ -26,6 +26,17 @@ Note: for shared lib, with android plugin 2.2.0-alpha3+, once declared as SHARED
 Studio will automatically pack them into apk too! So lib just need tell Android Studio once, it
 will be used both on Host and on Target
 
+修改说明
+--------------
+参照原来项目的 JNI 编译配置方式，添加了一个 JNI 层的 library 项目，即 Application 项目只需要依赖 library 项目的 aar 文件即可达到调用底层 so 文件的目的，提供 C/C++ 项目移植到 Android 平台的参考配置模板。
+
+踩坑点：
+1. 在 CMakeLists.txt 中配置第三方库文件(libs 和 include) 一定要注意路径是否正确. 一般以 CMakeLists.txt 所在路径配置相对路径。
+2. 在 JNI 中 Java 声明的 Native 方法对应到 CPP 文件中时方法签名头部需要添加 extern "C"。
+3. 在 JNI library 中的 build.gradle 要添加 jniLins = 第三方 so 库路径。
+
+
+
 Pre-requisites
 --------------
 - Android Studio 2.2+ with [NDK](https://developer.android.com/ndk/) bundle.
