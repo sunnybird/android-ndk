@@ -1,4 +1,5 @@
-include ':app'
+//include ':app', ':applicationdemo'
+include ':jnilibs', ':appusejnilibs', ':jnilibs-release'
 
 // The following is just for generating libs only.
 // To use:
@@ -7,5 +8,5 @@ include ':app'
 //   build the app in Android Studio or command line
 //   Comment out this line and the one inside app/build.gradle again
 
-// include ':gen-libs'
+//include ':gen-libs'
 

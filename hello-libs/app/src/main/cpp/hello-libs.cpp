@@ -20,7 +20,7 @@
 #include <android/log.h>
 #include <gmath.h>
 #include <gperf.h>
-
+#include <calcnative.h>
 
 #define LOGI(...) \
   ((void)__android_log_print(ANDROID_LOG_INFO, "hell-libs::", __VA_ARGS__))
@@ -31,6 +31,8 @@
  *
  *   app/src/main/java/com/example/hellolibs/MainActivity.java
  */
+
+
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_example_hellolibs_MainActivity_stringFromJNI(JNIEnv *env, jobject thiz) {
     // Just for simplicity, we do this right away; correct way would do it in
@@ -44,6 +46,8 @@ Java_com_example_hellolibs_MainActivity_stringFromJNI(JNIEnv *env, jobject thiz)
     ticks = GetTicks() - ticks;
 
     LOGI("calculation time: %" PRIu64, ticks);
+
+    int m = add_native(1,2);
 
     return env->NewStringUTF("Hello from JNI LIBS!");
 }

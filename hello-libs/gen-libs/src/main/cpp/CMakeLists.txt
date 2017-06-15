@@ -29,4 +29,4 @@ file(MAKE_DIRECTORY ${lib_build_DIR})
 
 add_subdirectory(${lib_src_DIR}/gmath ${lib_build_DIR}/gmath)
 add_subdirectory(${lib_src_DIR}/gperf ${lib_build_DIR}/gperf)
-
+add_subdirectory(${lib_src_DIR}/calc ${lib_build_DIR}/calc)
