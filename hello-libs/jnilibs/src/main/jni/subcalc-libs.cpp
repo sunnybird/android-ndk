@@ -11,7 +11,7 @@
   ((void)__android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__))
 
 
-
+extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_jnilibs_SubtCalc_add(JNIEnv *env, jclass type, jint a, jint b) {
 
@@ -22,6 +22,8 @@ Java_com_example_jnilibs_SubtCalc_add(JNIEnv *env, jclass type, jint a, jint b) 
 
 }
 
+
+extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_jnilibs_SubtCalc_sub(JNIEnv *env, jclass type, jint a, jint b) {
 
@@ -30,6 +32,8 @@ Java_com_example_jnilibs_SubtCalc_sub(JNIEnv *env, jclass type, jint a, jint b) 
     return sub_native(a,b) ;
 }
 
+
+extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_jnilibs_SubtCalc_divid(JNIEnv *env, jclass type, jint a, jint b) {
 
@@ -38,6 +42,7 @@ Java_com_example_jnilibs_SubtCalc_divid(JNIEnv *env, jclass type, jint a, jint b
     return divid_native(a,b) ;
 }
 
+extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_jnilibs_SubtCalc_mulit(JNIEnv *env, jclass type, jint a, jint b) {
 

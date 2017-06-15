@@ -36,7 +36,8 @@
  */
 
 
-extern "C" JNIEXPORT jstring JNICALL
+extern "C"
+ JNIEXPORT jstring JNICALL
 Java_com_example_applicationdemo_JniWrapper_stringFromJNI(JNIEnv *env, jobject thiz) {
     // Just for simplicity, we do this right away; correct way would do it in
     // another thread...
