@@ -9,7 +9,7 @@ Additional Android Studio samples:
 - [Google Play Game Samples with Android Studio](https://github.com/playgameservices/cpp-android-basic-samples)
 - [Google Android Vulkan Tutorials](https://github.com/googlesamples/android-vulkan-tutorials)
 - [Android Vulkan API Basic Samples](https://github.com/googlesamples/vulkan-basic-samples)
-- [Android High Performance Audio](https://github.com/googlesamples/android-audio-high-performance)	
+ - [Android High Performance Audio](https://github.com/googlesamples/android-audio-high-performance)
 
 Known Issues
 - Some are documented at [Android Studio](http://tools.android.com/knownissues) page
@@ -21,7 +21,7 @@ Build Steps
 ----------
 - With Android Studio: use "Import Project(Eclipse ADT, Gradle, etc)" or "File" > "Import Project" option
 - On Command Line/Terminal:  make sure set up ANDROID_HOME and ANDROID_NDK_HOME to local installation of SDK and NDK, then go to individual sample dir, and use "gradlew assembleDebug"
- 
+
 Support
 -------
 
@@ -32,6 +32,10 @@ If you've found an error in these samples, please [file an issue](https://github
 
 Patches and new samples are encouraged, and may be submitted by [forking this project](https://github.com/googlesamples/android-ndk/fork) and
 submitting a pull request through GitHub. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+修改部分
+-------
+详情请参考 [hello-libs](https://github.com/sunnybird/android-ndk/tree/master/hello-libs)
 
 License
 -------
@@ -56,3 +60,4 @@ the License.
 [LICENSE](LICENSE)
 
 [0]: https://developer.android.com/ndk
+
